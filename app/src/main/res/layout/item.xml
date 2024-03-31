@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+
+    app:contentPadding="10dp"
+    app:cardElevation="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="384dp">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.301"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="186dp"
+            android:layout_height="246dp"
+            android:layout_marginTop="32dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toEndOf="@+id/foto"
+            app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/detalles"
+            android:layout_width="113dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:background="#102DEF"
+            android:text="detalles"
+            app:layout_constraintEnd_toStartOf="@+id/descripcion"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/foto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
